@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import re
 
 # Load your movies dataframe
-movies_df = pd.read_csv("C:\\Users\\prade\\Downloads\\movies.csv")
+movies_df = pd.read_csv("movies.csv")
 
 # Replace '|' with space to create a bag of words format
 movies_df['genres'] = movies_df['genres'].str.replace('|', ' ')
